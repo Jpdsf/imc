@@ -1,0 +1,19 @@
+.calculadora{
+    width: 100%;
+}
+
+.caculadora-config{
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 198, 248, 0.13);
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid rgba(0, 198, 248, 0.13);
+    border-radius: 7px;
+    
+    padding-bottom: 30px;
+}
+
+#title-altura{
+    margin: 10px;
+}
