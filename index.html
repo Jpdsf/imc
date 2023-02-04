@@ -22,10 +22,7 @@
         <div class="caculadora-config">
             <div class="sexo">
                 <div class="container">
-                    <h4>Sexo</h4>
-                </div>
-                <button>Masculino</button>
-                <button>Feminino</button>
+                
             </div>
             <div class="medidas">
                 <h4 id="title-altura">Altura</h4>
@@ -45,6 +42,22 @@
                     });
                   </script>
 
+                <h4 id="title-peso">Peso</h4>
+                    <input type="number" value="1" autofocus min="0" id="peso">
+                
+                
+                
+
+            </div>
+
+            <div>
+                <button id="calcular" onclick="calcular()">Calcular</button>
+            </div>
+
+            <div class="resultados">
+                <span id="valor"></span>
+                <br>
+                <p>Imc: <span id="valorImc">0</span></p>
             </div>
             
 
