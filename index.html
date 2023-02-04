@@ -15,21 +15,18 @@
 
 
     <div class="container text-center ">
-        <h2>Calculadora IMC</h2>
+        <h1>Calculadora IMC</h1>
     </div>
 
     <div class="calculadora">
         <div class="caculadora-config">
-            <div class="sexo">
-                <div class="container">
-                
-            </div>
+            
             <div class="medidas">
-                <h4 id="title-altura">Altura</h4>
+                <h2 id="title-altura">Altura</h2>
 
-                    <p><span id="alturaTela">0</span></p>
+                    <h3><span id="alturaTela">0</span> cm</h3>
 
-                    <input type="range" id="altura" min="0" max="300" value="33" >
+                    <input type="range" id="altura" min="0" max="300" value="0" class="slider" >
                           
                   
                   <script type="text/javascript">
@@ -42,8 +39,11 @@
                     });
                   </script>
 
-                <h4 id="title-peso">Peso</h4>
-                    <input type="number" value="1" autofocus min="0" id="peso">
+                  <h2 id="title-peso">Peso</h2>
+                <div class="container-peso">
+                    <input type="number"  autofocus min="0" id="peso" placeholder="Peso em Kg">
+                    
+                </div>
                 
                 
                 
@@ -51,13 +51,13 @@
             </div>
 
             <div>
-                <button id="calcular" onclick="calcular()">Calcular</button>
+                <button class="btn btn-outline-primary" id="calcular" onclick="calcular()">Calcular</button>
             </div>
 
             <div class="resultados">
-                <span id="valor"></span>
+                <h3> Status: <span id="valor"></span></h3>
                 <br>
-                <p>Imc: <span id="valorImc">0</span></p>
+                <h3> Imc: <span id="valorImc">0</span> </h3>
             </div>
             
 
